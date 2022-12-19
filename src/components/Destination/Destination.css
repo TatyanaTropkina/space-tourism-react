@@ -1,0 +1,34 @@
+
+.chakra-tabs__tablist {
+    width: 50%;
+    margin-left: auto;
+}
+
+.chakra-tabs__tab-panel > div {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+}
+.sliderBodyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.sliderTab {
+    background-color: transparent;
+    border: none;
+    margin-right: 27px;
+    cursor: pointer;
+}
+
+.sliderTab:last-child {
+    margin-right: 0;
+}
+.sliderTab[aria-selected="true"] > div{
+
+    color: white;
+    border-bottom: 3px solid white;
+}

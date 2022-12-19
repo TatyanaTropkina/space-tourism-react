@@ -1,0 +1,14 @@
+.pageContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: darkmagenta;
+}
+.itemLink {
+    background-color: darkmagenta;
+    color: red;
+}
