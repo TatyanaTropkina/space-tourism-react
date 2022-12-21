@@ -1,0 +1,51 @@
+.techSliderImg {
+    width: 515px;
+    height: 527px;
+    object-fit: cover;
+    position: relative;
+    right: -150px;
+}
+.techSlider {
+    display: flex;
+}
+.techButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 80px;
+}
+.techButton {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: transparent;
+    margin-bottom: 32px;
+    /*font-family: 'Bellefair';*/
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+
+}
+.techButton[aria-selected="true"]{
+    color: #0B0D17;
+    background-color: #fff;
+    opacity: 1;
+}
+.techTitle {
+    /*font-family: 'Bellefair';*/
+    font-size: 56px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+}
+.techSliderTitle {
+    /*font-family: 'Barlow Condensed';*/
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+margin-bottom: 11px;
+    color: #D0D6F9;
+}

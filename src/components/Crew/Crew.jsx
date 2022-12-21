@@ -1,9 +1,8 @@
-import style from "./Crew.module.css";
+// import style from "./Technology.module.css";
 import bg from "./../../Images/crew/background-crew-desktop.jpg";
 import {Tabs, TabList, TabPanels, Tab, TabPanel} from '@chakra-ui/react'
 import crew from "./../../Images/crew/ansari.webp"
 import "./Crew.css"
-import classes from "../Destination/Destination.module.css";
 
 const TabBody = (props) => {
     return (
