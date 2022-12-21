@@ -1,33 +1,32 @@
 
-.chakra-tabs__tablist {
+.destinationButtons{
     width: 50%;
     margin-left: auto;
 }
 
-.chakra-tabs__tab-panel > div {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-
-}
-.sliderBodyContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.destinationBodyContent {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
     padding-top: 40px;
 }
-.sliderTab {
+.destinationButton {
     background-color: transparent;
-    border: none;
     margin-right: 27px;
-    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    padding-bottom: 12px;
+
+    position: relative;
 }
 
-.sliderTab:last-child {
+.destinationButton:last-child {
     margin-right: 0;
 }
-.sliderTab[aria-selected="true"] > div{
+.destinationButton[aria-selected="true"]{
 
     color: white;
     border-bottom: 3px solid white;

@@ -18,8 +18,8 @@ function App(props) {
               <Routes>
                 <Route path="/Home" element={<Home/>}/>
                 <Route path="/Destination/*" element={<Destination destinationPage={props.state.destinationPage} />}/>
-                <Route path="/Crew" element={<Crew/>}/>
-                <Route path="/Technology" element={<Technology/>}/>
+                <Route path="/Crew" element={<Crew crewPage={props.state.crewPage}/>}/>
+                <Route path="/Technology" element={<Technology techPage={props.state.techPage}/>}/>
               </Routes>
             </div>
           </div>

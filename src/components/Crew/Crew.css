@@ -1,0 +1,45 @@
+.crewSlider {
+
+    position: relative;
+}
+.crewBodyContent {
+    padding-bottom: 110px;
+}
+.crewOccupation {
+    /*font-family: 'Bellefair';*/
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+.crewName {
+    /*font-family: 'Bellefair';*/
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+.crewButton {
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    margin-right: 24px;
+}
+.crewButton[aria-selected="true"]{
+
+    opacity: 1;
+}
+
+.crewButtons {
+    position: absolute;
+    bottom: 96px;
+    left: 0;
+
+}

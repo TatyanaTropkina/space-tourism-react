@@ -1,14 +1,45 @@
 import style from "./Tecnology.module.css";
 import bg from "./../../Images/technology/background-technology-desktop.jpg";
-import Page from "../Pages/Page/Page";
+import crew from "../../Images/crew/ansari.webp";
+import {Tabs, TabList, TabPanels, Tab, TabPanel} from '@chakra-ui/react'
 
-function Technology() {
+const TabBody = (props) => {
     return (
-        <div>Page Technology
-            <img className="bg" src={bg} alt=""/>
-
-            {/*<Page title="03 Space launch 101"/>*/}
+        <div className="sliderBody">
+            <div className="sliderBodyContent crewBodyContent">
+                <div className="crewOccupation">{props.occupation}</div>
+                <div className="crewName">{props.name}</div>
+                <p className="sliderBodyText">{props.text}</p>
+            </div>
+            <div>
+                <img src={crew} alt=""/>
+            </div>
         </div>
+    )
+}
+function Technology(props) {
+    const tabs = props.crewPage.map(t => <Tab className="techButton sliderTab"></Tab>)
+    const content = props.crewPage.map(c => <TabPanel><TabBody crewPage={props.crewPage} occupation={c.occupation}
+                                                               name={c.name} text={c.text}/></TabPanel>)
+    return (
+        <div className="Crew">
+            <img className="bg" src={bg} alt=""/>
+            <h2 className="titlePage"><span>03</span>SPACE LAUNCH 101</h2>
+            <div>
+                <Tabs className="techSlider">
+                    <TabList className="techButtons">
+                        {tabs}
+                    </TabList>
+                    <TabPanels>
+                        <p className="techTitle">THE TERMINOLOGY…</p>
+                        {content}
+                    </TabPanels>
+
+
+                </Tabs>
+            </div>
+        </div>
+
     )
 }
 
